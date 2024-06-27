@@ -1,6 +1,9 @@
 import { DescriptifTechniquePENA } from '../../src/model/DescriptifTechniquePENA';
 import { DescriptifTechniquePIBI } from '../../src/model/DescriptifTechniquePIBI';
 
+/**
+* Descriptif technique associé à un PEI.
+*/
 export type DescriptifTechniqueDECI = DescriptifTechniquePIBI | DescriptifTechniquePENA;
 
 export enum TypeEnum {

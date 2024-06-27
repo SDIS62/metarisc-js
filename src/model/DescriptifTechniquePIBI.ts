@@ -1,14 +1,32 @@
 import { DescriptifTechniqueDECIBase } from '../model/DescriptifTechniqueDECIBase';
 
+/**
+* Descriptif technique d\'un PIBI - Poteau incendie ou Bouche incendie.
+*/
 export type DescriptifTechniquePIBI = DescriptifTechniqueDECIBase & { 
     /**
-    * Surpression mesurée en bar
+    * Surpression du réseau d\'eau sur lequel est relié le PIBI mesurée en bar.
     */
     'surpression'?: number;
+    /**
+    * Nature du PIBI.
+    */
     'nature'?: NatureEnum;
+    /**
+    * Débit en m3/h à 1 bar de pression dynamique.
+    */
     'debit_1bar'?: number;
+    /**
+    * Pression (en bar) mesurée avec le PIBI ouvert et vanne de régulation sur valeurs d’essai.
+    */
     'pression'?: number;
+    /**
+    * Pression (en bar) mesurée avec le PIBI ouvert mais vanne de régulation fermée.
+    */
     'pression_statique'?: number;
+    /**
+    * Débit maximal en m3/h.
+    */
     'debit_gueule_bee'?: number;
 };
 

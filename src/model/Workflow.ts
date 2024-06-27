@@ -8,6 +8,9 @@ import { WorkflowRemiseEnServicePEI } from '../../src/model/WorkflowRemiseEnServ
 import { WorkflowValidation } from '../../src/model/WorkflowValidation';
 import { WorkflowVisite } from '../../src/model/WorkflowVisite';
 
+/**
+* Étape du traitement d\'un dossier. Une étape est liée à un groupe de travail ainsi qu\'a un nombre de champs à valider.
+*/
 export type Workflow = WorkflowDossiersLies | WorkflowRemiseEnServicePEI | WorkflowPassageCommissionSecurite | WorkflowAnalyseDeRisque | WorkflowArriveeSecretariat | WorkflowConsultationSis | WorkflowValidation | WorkflowVisite | WorkflowRelectureSecretariat;
 
 export enum EtatEnum {

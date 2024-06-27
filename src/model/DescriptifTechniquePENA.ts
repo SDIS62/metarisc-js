@@ -1,8 +1,21 @@
 import { DescriptifTechniqueDECIBase } from '../model/DescriptifTechniqueDECIBase';
 
+/**
+* Descriptif technique d\'un PENA - Point d\'Eau Naturel ou Artificiel.
+*/
 export type DescriptifTechniquePENA = DescriptifTechniqueDECIBase & { 
+    /**
+    * Nature du PENA.
+    */
     'nature'?: NatureEnum;
+    /**
+    * Dans le cas d\'une citerne, information sur son volume d\'eau en m3.
+    */
     'volume'?: number;
+    /**
+    * Permet de savoir si le PENA est une citerne.
+    */
+    'est_citerne'?: boolean;
 };
 
 export enum TypeEnum {
