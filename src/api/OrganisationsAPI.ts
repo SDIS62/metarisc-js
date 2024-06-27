@@ -108,7 +108,7 @@ export class OrganisationsAPI extends Core {
             method: 'POST',
             endpoint: Utils.constructPath(pathVariable, '/organisations/{org_id}/membres'),
             params: {  },
-            body: Utils.payloadFilter( { 'organisation': organisationMembre?.organisation, 'utilisateur_id': organisationMembre?.utilisateur_id, 'utilisateur': organisationMembre?.utilisateur, 'date_integration': organisationMembre?.date_integration ? Utils.formatDate(organisationMembre?.date_integration) : undefined, 'role': organisationMembre?.role } )
+            body: Utils.payloadFilter( { 'organisation': organisationMembre?.organisation, 'utilisateur': organisationMembre?.utilisateur, 'utilisateur_id': organisationMembre?.utilisateur_id, 'date_integration': organisationMembre?.date_integration ? Utils.formatDate(organisationMembre?.date_integration) : undefined, 'role': organisationMembre?.role } )
         });
     }
     

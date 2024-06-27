@@ -39,15 +39,15 @@ export class AnomaliesAPI extends Core {
     }
     
     /**
-     * Liste des anomalies.
+     * Retourne une liste des anomalies types dans la bibliothèque DECI.
      */
-    paginateAnomalies(page?: number, perPage?: number, texte?: string ): Collection<AnomalieDECI>
+    paginateAnomalies(page?: number, perPage?: number, sort?: SortEnum, texte?: string ): Collection<AnomalieDECI>
     {
         const pathVariable = {  };
         return this.collect<AnomalieDECI>({
             method: 'GET',
             endpoint: Utils.constructPath(pathVariable, '/anomalies'),
-            params: { 'page': page?.toString(), 'per_page': perPage?.toString(), 'texte': texte },
+            params: { 'page': page?.toString(), 'per_page': perPage?.toString(), 'sort': sort, 'texte': texte },
             body: Utils.payloadFilter({})
         });
     }

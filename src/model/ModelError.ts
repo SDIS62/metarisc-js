@@ -1,5 +1,5 @@
 /**
-* Un objet commun Error (RFC 7807). 
+* Un objet commun Error (RFC 7807).
 */
 export type ModelError = {
     /**

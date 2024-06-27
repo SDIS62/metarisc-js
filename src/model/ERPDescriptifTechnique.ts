@@ -1,9 +1,10 @@
-import { DescriptifTechniqueERPBase } from '../../src/model/DescriptifTechniqueERPBase';
+import { DescriptifTechniqueERP } from '../model/DescriptifTechniqueERP';
 
 /**
-* Descriptif technique associé à un ERP.
+* Descriptif technique actuel de l\'ERP.
 */
-export type DescriptifTechniqueERP = DescriptifTechniqueERPBase;
+export type ERPDescriptifTechnique = DescriptifTechniqueERP & { 
+};
 
 export enum StatutErpEnum {
     RepriseDeDonnees = 'reprise_de_donnees',

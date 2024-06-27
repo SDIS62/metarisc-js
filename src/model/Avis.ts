@@ -1,8 +1,14 @@
+/**
+* Objet représentant un avis générique.
+*/
 export type Avis = {
-    'avis_exploitation'?: AvisExploitationEnum;
+    /**
+    * Type de l\'avis donné.
+    */
+    'type'?: TypeEnum;
 };
 
-export enum AvisExploitationEnum {
-    FavorableExploitation = 'favorable_exploitation',
-    DefavorableExploitation = 'defavorable_exploitation'
+export enum TypeEnum {
+    Favorable = 'favorable',
+    Defavorable = 'defavorable'
 }
